@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Fruticas Mias</string>
+    <string name="action_settings">Settings</string>
+    <string name="Agregar_producto">Agregar Producto</string>
+    <string name="nombre_producto">Nombre del Producto</string>
+    <string name="precio">Precio</string>
+    <string name="descripcion">Descripcion</string>
+
+    <string name="catalogoProducto">Catalogo de Productos</string>
+    <string name="salir">Salir</string>
+    <string name="reporte">Reportes</string>
+    <string name="Bienvenido">Bienvenido Elige tu Opcion</string>
+    <string name="guardar">Guardar</string>
+    <string name="limpiar">Limpiar</string>
+    <string name="agregarVentas">Agregar Ventas</string>
+    <string name="buscar_cliente">Buscar Cliente</string>
+    <string name="ventas">Ventas</string>
+    <string name="nombre">Nombre del Cliente</string>
+
+    <string-array name="opcioneslistar">
+        <item>@string/Agregar_producto</item>
+        <item>@string/catalogoProducto</item>
+        <item>@string/reporte</item>
+        <item>@string/ventas</item>
+        <item>@string/salir</item>
+    </string-array>
+</resources>
