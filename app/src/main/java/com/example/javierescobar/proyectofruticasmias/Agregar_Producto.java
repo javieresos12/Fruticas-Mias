@@ -19,7 +19,14 @@ public class Agregar_Producto extends AppCompatActivity {
         descripcion= findViewById(R.id.txtDescripcion);
     }
 
-   public void limpiar(View v ){
+    public void guardar (){
+    }
+
+    public void borrar(View v ){
+        limpiar();
+    }
+
+   public void limpiar(){
         nombreProducto.setText("");
         precio.setText("");
         descripcion.setText("");
