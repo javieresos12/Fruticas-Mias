@@ -14,11 +14,11 @@ public class Agregar_Producto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar__producto);
-        nombreProducto= findViewById(R.id.txtnombrep);
+        nombreProducto= findViewById(R.id.txtNombre);
         precio= findViewById(R.id.txtprecio);
         descripcion= findViewById(R.id.txtDescripcion);
     }
-
+/*
     public void guardar (){
     }
 
@@ -33,4 +33,6 @@ public class Agregar_Producto extends AppCompatActivity {
         nombreProducto.requestFocus();
 
     }
+
+    */
 }

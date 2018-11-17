@@ -29,6 +29,7 @@
             android:name=".InicioSesion"
             android:label="@string/title_activity_inicio_sesion" />
         <activity android:name=".AgregarCliente"></activity>
+        <activity android:name=".DetalleProducto"></activity>
     </application>
 
 </manifest>
