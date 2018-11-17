@@ -1,16 +1,26 @@
 package com.example.javierescobar.proyectofruticasmias;
 
 public class Cliente {
+    private String id;
     private String nombre;
     private String Apellido;
     private String tel;
     private String direccion;
 
-    public Cliente(String nombre, String apellido, String tel, String direccion) {
+    public Cliente(String id, String nombre, String apellido, String tel, String direccion) {
+        this.id = id;
         this.nombre = nombre;
-        Apellido = apellido;
+        this.Apellido = apellido;
         this.tel = tel;
         this.direccion = direccion;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getNombre() {

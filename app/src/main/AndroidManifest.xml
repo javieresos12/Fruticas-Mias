@@ -24,7 +24,7 @@
         <activity android:name=".Catalogo_Producto" />
         <activity android:name=".Agregar_Producto" />
         <activity android:name=".Reporte" />
-        <activity android:name=".Ventas" />
+        <activity android:name=".AgregarVentas" />
         <activity
             android:name=".InicioSesion"
             android:label="@string/title_activity_inicio_sesion" />
