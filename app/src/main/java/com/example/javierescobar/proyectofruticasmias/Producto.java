@@ -54,4 +54,13 @@ public class Producto {
     public void setFoto(String foto) {
         this.foto = foto;
     }
+
+    /*public void guardar(){
+        Datos.agregar(this);
+    }
+
+    public void eliminar(){Datos.eliminar(this);}
+
+    public void editar(){Datos.editar(this);}
+    */
 }
