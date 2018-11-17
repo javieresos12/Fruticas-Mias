@@ -19,7 +19,8 @@
         <activity android:name=".Catalogo_Producto" />
         <activity android:name=".Agregar_Producto" />
         <activity android:name=".Reporte" />
-        <activity android:name=".Ventas"></activity>
+        <activity android:name=".Ventas" />
+        <activity android:name=".DetalleProducto"></activity>
     </application>
 
 </manifest>
