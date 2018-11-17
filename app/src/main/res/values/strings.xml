@@ -9,13 +9,20 @@
     <string name="catalogoProducto">Catalogo de Productos</string>
     <string name="salir">Salir</string>
     <string name="reporte">Reportes</string>
-    <string name="Bienvenido">Bienvenido Elige tu Opcion</string>
+    <string name="Bienvenido">Bienvenido Elige tu Opción</string>
     <string name="guardar">Guardar</string>
     <string name="limpiar">Limpiar</string>
     <string name="agregarVentas">Agregar Ventas</string>
     <string name="buscar_cliente">Buscar Cliente</string>
     <string name="ventas">Ventas</string>
     <string name="nombre">Nombre del Cliente</string>
+    <string name="agregarCliente">Agregar Cliente</string>
+    <string name="factura">Factura</string>
+    <string name="cliente">Cliente</string>
+    <string name="cantidad">Cantidad</string>
+    <string name="producto">Producto</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="total">Total</string>
 
     <string-array name="opcioneslistar">
         <item>@string/Agregar_producto</item>
