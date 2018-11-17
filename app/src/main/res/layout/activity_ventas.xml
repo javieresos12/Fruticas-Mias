@@ -40,6 +40,7 @@
 
         <Button
             android:id="@+id/btnAgregarCliente"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -80,6 +81,7 @@
 
         <Button
             android:id="@+id/btnAgregarProducto"
+            style="@style/Widget.AppCompat.Button.Colored"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
