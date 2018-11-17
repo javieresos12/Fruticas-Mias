@@ -1,7 +1,6 @@
 package com.example.javierescobar.proyectofruticasmias;
 
 import android.content.Intent;
-import android.provider.Settings;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -45,7 +44,7 @@ public class Principal extends AppCompatActivity {
                         startActivity(in);
                         break;
                     case 3:
-                        in = new Intent( Principal.this, Ventas.class);
+                        in = new Intent( Principal.this, AgregarVentas.class);
                         startActivity(in);
                         break;
                     case 4:

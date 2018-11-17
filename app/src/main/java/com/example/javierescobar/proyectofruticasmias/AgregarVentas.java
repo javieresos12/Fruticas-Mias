@@ -3,7 +3,8 @@ package com.example.javierescobar.proyectofruticasmias;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class Ventas extends AppCompatActivity {
+public class AgregarVentas extends AppCompatActivity {
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

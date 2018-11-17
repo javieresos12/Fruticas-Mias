@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "664759178096",
-    "firebase_url": "https://fruticasmias.firebaseio.com",
-    "project_id": "fruticasmias",
-    "storage_bucket": "fruticasmias.appspot.com"
+    "project_number": "154822530350",
+    "firebase_url": "https://fruticasmias-2b488.firebaseio.com",
+    "project_id": "fruticasmias-2b488",
+    "storage_bucket": "fruticasmias-2b488.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:664759178096:android:0a431ccb93ae3dee",
+        "mobilesdk_app_id": "1:154822530350:android:0a431ccb93ae3dee",
         "android_client_info": {
           "package_name": "com.example.javierescobar.proyectofruticasmias"
         }
       },
       "oauth_client": [
         {
-          "client_id": "664759178096-gqmhvk4u7g55kvlhsfavf6jrpvrcr3ka.apps.googleusercontent.com",
+          "client_id": "154822530350-jt5kb08c453rlfc842m94rp3jjvmf8l8.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyA3MbMA-AxYb4on0TEVh5eKXJGM6z8g6gg"
+          "current_key": "AIzaSyAIiVKlNvk268F4T1LEpCKqQFSBlr6_bSk"
         }
       ],
       "services": {

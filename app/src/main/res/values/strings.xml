@@ -45,7 +45,6 @@
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>
-    <string name="agregarCliente">Agregar Cliente</string>
     <string name="apellido">Apellido del Cliente</string>
     <string name="telefono">Telefono</string>
     <string name="direccion">Dirección</string>
