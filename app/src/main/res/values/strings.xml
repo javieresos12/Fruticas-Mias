@@ -49,5 +49,6 @@
     <string name="telefono">Telefono</string>
     <string name="direccion">Dirección</string>
     <string name="detalle_producto">Detalle de producto</string>
+    <string name="guardado_exitoso_cliente">Cliente Guardado Exitosamente</string>
 
 </resources>
