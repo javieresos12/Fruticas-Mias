@@ -5,7 +5,7 @@
     <string name="nombre_producto">Nombre del Producto</string>
     <string name="precio">Precio:</string>
     <string name="descripcion">Descripcion:</string>
-
+    <string name="productoAgregagoexitoxamente">Producto Agregado Exitosamente</string>
     <string name="catalogoProducto">Catalogo de Productos</string>
     <string name="salir">Salir</string>
     <string name="reporte">Reportes</string>
@@ -23,6 +23,7 @@
     <string name="producto">Producto:</string>
     <string name="subtotal">Subtotal</string>
     <string name="total">Total</string>
+    <string name="seleccionarFoto">Seleccionar Foto</string>
 
     <string-array name="opcioneslistar">
         <item>@string/Agregar_producto</item>

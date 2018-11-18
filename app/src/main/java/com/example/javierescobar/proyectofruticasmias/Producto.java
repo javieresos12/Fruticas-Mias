@@ -55,12 +55,12 @@ public class Producto {
         this.foto = foto;
     }
 
-    /*public void guardar(){
-        Datos.agregar(this);
+    public void guardar(){
+        Datos.agregarProducto(this);
     }
 
-    public void eliminar(){Datos.eliminar(this);}
+    public void eliminar(){Datos.eliminarProducto(this);}
 
-    public void editar(){Datos.editar(this);}
-    */
+    public void editar(){Datos.editarProducto(this);}
+
 }
