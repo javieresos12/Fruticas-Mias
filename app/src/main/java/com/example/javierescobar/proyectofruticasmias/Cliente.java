@@ -54,4 +54,16 @@ public class Cliente {
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
+
+    public void guardar(){
+        Datos.agregarCliente(this);
+    }
+
+    public void eliminar(){
+        Datos.eliminarCliente(this);
+    }
+
+    public void editar(){
+        Datos.editarCliente(this);
+    }
 }
