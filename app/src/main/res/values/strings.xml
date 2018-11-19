@@ -26,6 +26,8 @@
 
     <string-array name="opcioneslistar">
         <item>@string/Agregar_producto</item>
+        <item>@string/agregarCliente</item>
+        <item>@string/agregarVentas</item>
         <item>@string/catalogoProducto</item>
         <item>@string/reporte</item>
         <item>@string/ventas</item>

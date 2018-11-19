@@ -35,19 +35,29 @@ public class Principal extends AppCompatActivity {
                         break;
 
                     case 1:
-                        in = new Intent(Principal.this, Catalogo_Producto.class);
+                        in = new Intent( Principal.this, AgregarCliente.class);
                         startActivity(in);
                         break;
 
                     case 2:
-                        in = new Intent( Principal.this, Reporte.class);
-                        startActivity(in);
-                        break;
-                    case 3:
                         in = new Intent( Principal.this, AgregarVentas.class);
                         startActivity(in);
                         break;
+
+                    case 3:
+                        in = new Intent(Principal.this, Catalogo_Producto.class);
+                        startActivity(in);
+                        break;
+
                     case 4:
+                        in = new Intent( Principal.this, Reporte.class);
+                        startActivity(in);
+                        break;
+                    case 5:
+                        in = new Intent( Principal.this, AgregarVentas.class);
+                        startActivity(in);
+                        break;
+                    case 6:
                         System.exit(0);
                         break;
                 }
