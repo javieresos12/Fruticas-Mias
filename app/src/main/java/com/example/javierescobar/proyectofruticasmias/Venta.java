@@ -2,13 +2,13 @@ package com.example.javierescobar.proyectofruticasmias;
 
 public class Venta {
     private String id;
-    private Cliente cliente;
-    private Producto producto;
+    private String cliente;
+    private String producto;
     private int cantidad;
     private int subtotal;
     private int total;
 
-    public Venta(String id, Cliente cliente, Producto producto, int cantidad, int subtotal, int total) {
+    public Venta(String id, String cliente, String producto, int cantidad, int subtotal, int total) {
         this.id = id;
         this.cliente = cliente;
         this.producto = producto;
@@ -25,19 +25,19 @@ public class Venta {
         this.id = id;
     }
 
-    public Cliente getCliente() {
+    public String getCliente() {
         return cliente;
     }
 
-    public void setCliente(Cliente cliente) {
+    public void setCliente(String cliente) {
         this.cliente = cliente;
     }
 
-    public Producto getProducto() {
+    public String getProducto() {
         return producto;
     }
 
-    public void setProducto(Producto producto) {
+    public void setProducto(String producto) {
         this.producto = producto;
     }
 
@@ -63,5 +63,17 @@ public class Venta {
 
     public void setTotal(int total) {
         this.total = total;
+    }
+
+    public void guardar(){
+        Datos.agregarVenta(this);
+    }
+
+    public void eliminar(){
+        Datos.eliminarVenta(this);
+    }
+
+    public void editar(){
+        Datos.editarVenta(this);
     }
 }
