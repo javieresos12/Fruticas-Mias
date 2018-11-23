@@ -2,6 +2,7 @@ package com.example.javierescobar.proyectofruticasmias;
 
 public class Cliente {
     private String id;
+    private String cedula;
     private String nombre;
     private String Apellido;
     private String tel;
@@ -11,8 +12,9 @@ public class Cliente {
 
     }
 
-    public Cliente(String id, String nombre, String apellido, String tel, String direccion) {
+    public Cliente(String id, String cedula, String nombre, String apellido, String tel, String direccion) {
         this.id = id;
+        this.cedula = cedula;
         this.nombre = nombre;
         this.Apellido = apellido;
         this.tel = tel;
@@ -25,6 +27,14 @@ public class Cliente {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(String cedula) {
+        this.cedula = cedula;
     }
 
     public String getNombre() {

@@ -58,5 +58,6 @@
     <string name="infoProducto">Información del Producto</string>
     <string name="ventaGuardada">Venta Guardada Exitosamente.</string>
     <string name="Agregar_producto">Agregar Producto</string>
+    <string name="cedula">Cédula</string>
 
 </resources>

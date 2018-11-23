@@ -54,8 +54,10 @@ public class AgregarVentas extends AppCompatActivity {
                 final List<String> clientes = new ArrayList<String>();
 
                 for (DataSnapshot areaSnapshot: dataSnapshot.getChildren()){
-                    String nombreCliente = areaSnapshot.child("nombre").getValue(String.class);
-                    clientes.add(nombreCliente);
+                    String nombre = areaSnapshot.child("nombre").getValue(String.class);
+                    String cedula = areaSnapshot.child("cedula").getValue(String.class);
+                    String cliente = cedula + " - "+nombre;
+                    clientes.add(cliente);
                 }
 
                 ArrayAdapter<String> adapter = new ArrayAdapter<String>(AgregarVentas.this, android.R.layout.simple_spinner_item, clientes);
