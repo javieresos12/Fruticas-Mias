@@ -78,7 +78,6 @@ public class AgregarVentas extends AppCompatActivity {
 
                 for (DataSnapshot areaSnapshot: dataSnapshot.getChildren()){
                     String codigoProducto = areaSnapshot.child("codigo").getValue(String.class);
-                    System.out.println(cod + " " + codigoProducto);
                     if (cod.equalsIgnoreCase(codigoProducto)){
                         String nombreProducto = areaSnapshot.child("nombre").getValue(String.class);
                         Long precio = areaSnapshot.child("precio").getValue(Long.class);

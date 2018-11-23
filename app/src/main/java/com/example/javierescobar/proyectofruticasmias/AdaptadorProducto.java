@@ -47,10 +47,10 @@ public class AdaptadorProducto extends
                         Picasso.get().load(uri).into(holder.foto);
                     }
                 });
-        //holder.foto.setImageResource(p.getFoto());
-        holder.descripcion.setText(p.getDescripcion());
         holder.nombre.setText(p.getNombre());
+        holder.codigo.setText(p.getCodigo());
         holder.precio.setText(String.valueOf(p.getPrecio()));
+        holder.descripcion.setText(p.getDescripcion());
 
         holder.v.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,15 +71,17 @@ public class AdaptadorProducto extends
             private TextView nombre;
             private TextView precio;
             private TextView descripcion;
+            private TextView codigo;
             private View v;
 
             public ProductoViewHolder (View itemView){
                 super(itemView);
                 v = itemView;
                 foto = v.findViewById(R.id.foto);
-                nombre = v.findViewById(R.id.txtnombrep);
-                precio = v.findViewById(R.id.txtprecio);
-                descripcion = v.findViewById(R.id.txtDescripcion);
+                nombre = v.findViewById(R.id.lblnombre);
+                codigo = v.findViewById(R.id.lblCodigo);
+                precio = v.findViewById(R.id.lblprecio);
+                descripcion = v.findViewById(R.id.lbldescripcion);
             }
     }
 
