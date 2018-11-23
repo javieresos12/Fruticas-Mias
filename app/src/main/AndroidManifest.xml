@@ -14,7 +14,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Principal">
+
+        <activity android:name=".Principal"/>
+        <activity android:name=".SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,8 +30,9 @@
         <activity
             android:name=".InicioSesion"
             android:label="@string/title_activity_inicio_sesion" />
-        <activity android:name=".AgregarCliente"></activity>
-        <activity android:name=".DetalleProducto"></activity>
+        <activity android:name=".AgregarCliente" />
+        <activity android:name=".DetalleProducto" />
+
     </application>
 
 </manifest>

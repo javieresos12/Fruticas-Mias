@@ -25,6 +25,7 @@
     <string name="total">Total</string>
     <string name="seleccionarFoto">Seleccionar Foto</string>
 
+
     <string-array name="opcioneslistar">
         <item>@string/Agregar_producto</item>
         <item>@string/agregarCliente</item>
@@ -35,6 +36,13 @@
         <item>@string/salir</item>
     </string-array>
     <string name="title_activity_inicio_sesion">Registrarse</string>
+
+    <string-array name="reporte">
+        <item>@string/reporte1</item>
+        <item>@string/reporte2</item>
+    </string-array>
+    <string name="reporte1">Total de ventas Registradas </string>
+    <string name="reporte2">Clientes con Mayor Compra </string>
 
     <!-- Strings related to login -->
     <string name="prompt_email">Email</string>
@@ -53,5 +61,13 @@
     <string name="direccion">Dirección</string>
     <string name="detalle_producto">Detalle de producto</string>
     <string name="guardado_exitoso_cliente">Cliente Guardado Exitosamente</string>
+    <string name="Enomb">Por Favor debe Ingresar un nombre</string>
+    <string name="Eapelli">Por Favor debe ingresar un apellido</string>
+    <string name="Etel">Por Favor debe Ingresar un telefono</string>
+    <string name="Edirec">Por favor debe ingresar una direccion</string>
+    <string name="erp">Por favor debe ingresar el nombre del producto</string>
+    <string name="erd">Por favor debe ingresar la descripcion</string>
+    <string name="erpre">Por favor debe ingresar un precio</string>
+    <string name="mostrar">Mostrar</string>
 
 </resources>

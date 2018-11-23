@@ -18,8 +18,24 @@
         android:textStyle="bold"
         android:typeface="sans" />
 
-    <ListView
-        android:id="@+id/IdReportes"
+    <Spinner
+        android:id="@+id/cmbreporte"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="50dp" />
+
+    <Button
+        android:id="@+id/btnMostrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="generarReporte2"
+        android:text="@string/mostrar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored" />
+
+    <Button
+        android:id="@+id/btnLimpiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/limpiar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Widget.Button.Colored" />
+
 </LinearLayout>

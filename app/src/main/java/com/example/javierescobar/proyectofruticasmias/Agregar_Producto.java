@@ -1,6 +1,7 @@
 package com.example.javierescobar.proyectofruticasmias;
 
 import android.content.Intent;
+import android.content.res.Resources;
 import android.net.Uri;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +27,7 @@ public class Agregar_Producto extends AppCompatActivity {
     private ImageView foto;
     private Uri uri;
     private StorageReference storageReference;
-
+    private Resources recursos;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +38,7 @@ public class Agregar_Producto extends AppCompatActivity {
         descripcion= findViewById(R.id.txtDescripcion);
 
         storageReference = FirebaseStorage.getInstance().getReference();
+        recursos = this.getResources();
     }
 
     public void guardar (View v){
@@ -55,6 +57,33 @@ public class Agregar_Producto extends AppCompatActivity {
         limpiar();
         Snackbar.make(v,getResources().getString(R.string.productoAgregagoexitoxamente),Snackbar.LENGTH_SHORT)
                 .show();
+
+    }
+
+    public boolean validar(){
+       String nom2, des2, pre2;
+
+       nom2=nombreProducto.getText().toString();
+       des2=descripcion.getText().toString();
+       pre2= precio.getText().toString();
+
+       if (nom2.isEmpty()){
+           nombreProducto.setError(recursos.getString(R.string.erp));
+           nombreProducto.requestFocus();
+           return false;
+       }
+       if (des2.isEmpty()){
+           descripcion.setError(recursos.getString(R.string.erd));
+           descripcion.requestFocus();
+           return false;
+       }
+
+       if (pre2.isEmpty()){
+           precio.setError(recursos.getString(R.string.erpre));
+           precio.requestFocus();
+           return false;
+       }
+     return true;
 
     }
 
