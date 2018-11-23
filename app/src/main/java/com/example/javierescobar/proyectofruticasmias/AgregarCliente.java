@@ -13,14 +13,16 @@ import android.widget.EditText;
 import java.util.ArrayList;
 
 public class AgregarCliente extends AppCompatActivity {
-    private EditText nombre, apellido, telefono, direccion;
+    private EditText nombre, apellido, telefono, direccion, cedula;
     private Resources recursos;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar_cliente);
 
+        cedula = findViewById(R.id.txtCedula);
         nombre = findViewById(R.id.txtNombreCliente);
         apellido = findViewById(R.id.txtApellido);
         telefono = findViewById(R.id.txtTelefono);
@@ -30,17 +32,19 @@ public class AgregarCliente extends AppCompatActivity {
     }
 
     public void guardar(View v){
-        String id, nomb, apel, telef, direc;
+        String id, ced, nomb, apel, telef, direc;
 
         id = Datos.getId();
+        ced = cedula.getText().toString();
         nomb = nombre.getText().toString();
         apel = apellido.getText().toString();
         telef = telefono.getText().toString();
         direc = direccion.getText().toString();
 
+
         if (validar()) {
 
-            Cliente c = new Cliente(id, nomb, apel, telef, direc);
+            Cliente c =new Cliente(id,ced,nomb,apel,telef,direc);
             c.guardar();
             limpiar();
             Snackbar.make(v, getResources().getString(R.string.guardado_exitoso_cliente), Snackbar.LENGTH_SHORT)
@@ -79,9 +83,11 @@ public class AgregarCliente extends AppCompatActivity {
             return false;
         }
      return true;
+
     }
 
     public void limpiar(){
+        cedula.setText("");
         nombre.setText("");
         apellido.setText("");
         telefono.setText("");

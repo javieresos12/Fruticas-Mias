@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Datos {
     private static String dbProducto = "Productos";
     private static String dbCliente = "Clientes";
-    private static String dbVentas = "AgregarVentas";
+    private static String dbVentas = "Ventas";
 
     private static DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
 

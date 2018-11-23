@@ -1,5 +1,6 @@
 package com.example.javierescobar.proyectofruticasmias;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.Resources;
 import android.net.Uri;
@@ -7,6 +8,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -20,10 +22,7 @@ import java.util.ArrayList;
 
 public class Agregar_Producto extends AppCompatActivity {
 
-    private  EditText nombreProducto, precio, descripcion;
-    private ArrayAdapter<String> adapter;
-    private String opc[];
-    private ArrayList<Integer> fotos;
+    private EditText nombreProducto, precio, descripcion, codigo;
     private ImageView foto;
     private Uri uri;
     private StorageReference storageReference;
@@ -33,29 +32,33 @@ public class Agregar_Producto extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_agregar__producto);
+
+        codigo =findViewById(R.id.txtCodigo);
         nombreProducto= findViewById(R.id.txtNombre);
         precio= findViewById(R.id.txtprecio);
         descripcion= findViewById(R.id.txtDescripcion);
+        foto=findViewById(R.id.fotoProducto);
 
         storageReference = FirebaseStorage.getInstance().getReference();
         recursos = this.getResources();
     }
 
     public void guardar (View v){
-        String nombre, descripcion2, id="", foto;
+        String cod, nombre, descripcion2, id, foto;
         double precio2;
 
         id=Datos.getId();
         foto= id+".jpg";
+        cod=codigo.getText().toString();
         nombre=nombreProducto.getText().toString();
         descripcion2= descripcion.getText().toString();
         precio2= Double.parseDouble(precio.getText().toString());
 
-        Producto p = new Producto( id, nombre, precio2, descripcion2,foto);
+        Producto p = new Producto( id, cod, nombre, precio2, descripcion2, foto);
         p.guardar();
         subir_foto(foto);
         limpiar();
-        Snackbar.make(v,getResources().getString(R.string.productoAgregagoexitoxamente),Snackbar.LENGTH_SHORT)
+        Snackbar.make(v,getResources().getString(R.string.productoAgregago),Snackbar.LENGTH_SHORT)
                 .show();
 
     }
@@ -95,6 +98,19 @@ public class Agregar_Producto extends AppCompatActivity {
                 getResources().getString(R.string.seleccionarFoto)),1);
     }
 
+    protected void onActivityResult(int requesCode,int resultCode,Intent data){
+        super.onActivityResult(requesCode,resultCode,data);
+
+        if(requesCode==1){
+            uri = data.getData();
+
+            if(uri != null){
+                foto.setImageURI(uri);
+
+            }
+        }
+    }
+
     private void subir_foto(String foto){
         StorageReference child = storageReference.child(foto);
         UploadTask uploadTask = child.putFile(uri);
@@ -104,12 +120,17 @@ public class Agregar_Producto extends AppCompatActivity {
         limpiar();
     }
 
-   public void limpiar(){
+    public void limpiar(){
+        codigo.setText("");
         nombreProducto.setText("");
         precio.setText("");
         descripcion.setText("");
+        foto.setImageResource(android.R.drawable.ic_menu_gallery);
         nombreProducto.requestFocus();
-
+        InputMethodManager inputMethodManager = (InputMethodManager)
+                getSystemService(Context.INPUT_METHOD_SERVICE);
+        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(),
+                InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
 
